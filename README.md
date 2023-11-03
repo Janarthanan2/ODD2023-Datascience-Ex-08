@@ -1,4 +1,4 @@
-# Ex-08-Data-Visualization-
+![239014451-265db0eb-13a3-43ef-8a4e-f7a4de10d28c](https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/779a20e3-38a1-4927-8860-212ac8bce76d)# Ex-08-Data-Visualization-
 # AIM
 To Perform Data Visualization on a complex dataset and save the data to a file.
 
@@ -111,7 +111,7 @@ sns.kdeplot(x="Profit", data = df,hue='Category')
 plt.plot(df['Category'], df['Sales'])
 plt.show()
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/5f621aad-c520-4e01-96cf-1701acefa1e7" height=300 width=350>
 
 
 - <B>_HEATMAP:_</B>
@@ -120,7 +120,7 @@ df.corr()
 plt.subplots(figsize=(12,7))
 sns.heatmap(df.corr(),annot=True)
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/d133809e-1704-4f91-8332-0041d7ca3e33" height=300 width=350>
 
 - <B>_PIECHART:_</B>
 ```python
@@ -141,32 +141,33 @@ colors = sns.color_palette('pastel')
 plt.pie(df3["Profit"],colors = colors,labels=labels, autopct = '%0.0f%%')
 plt.show()
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/09b81541-1b03-4017-bd64-e20c6894898b" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/76eb96a0-0bec-4d40-af21-f906b45b9c16" height=300 width=350>
 
 - <B>_HISTOGRAM:_</B>
 ```python
 plt.hist(df["Sub-Category"],facecolor="peru",edgecolor="blue",bins=10)
 plt.show()
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/5d549a00-18a3-4126-af87-1652098f826d" height=300 width=350>
 
 - <B>_BARGRAPH:_</B> 
 ```python
 plt.bar(df.index,df['Category'])
 plt.show()
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/bee209ed-e0f9-4968-94c7-babc9140edfb" height=300 width=350>
 
 - <B>_SCATTERPLOT:_</B>
 ```python
 plt.scatter(df["Region"],df["Profit"], c ="blue")
 plt.show() 
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/82653e8a-3f2a-4a58-ae41-0631925cd402" height=300 width=350>
 
 - <B>_BOXPLOT:_</B>
 ```python
 plt.boxplot(x="Sales",data=df)
 plt.show()
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/9515bcd2-15ba-453a-a02e-e3e6e3ea875c" height=300 width=350>
