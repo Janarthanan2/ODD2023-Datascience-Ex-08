@@ -39,9 +39,9 @@ plt.xticks(rotation = 90)
 sns.lineplot(x='Ship Mode',y='Category', hue ="Segment",data=df)
 sns.lineplot(x="Category",y="Sales",data=df,marker='o')
 ```
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/ebf5d018-c31c-4610-b26e-6395daeb5448" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/f50bd4c8-8840-4d61-afa9-f090d98716d2" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/dddc0ce1-5d37-463d-af9d-d9a39cf33def" height=300 width=350>
 
 - <B>_SCATTERPLOT:_</B>
 ```
