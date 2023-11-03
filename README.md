@@ -32,7 +32,7 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 ```
 - <B>_LINE PLOT:_</B>
-```
+```python
 plt.figure(figsize=(9,6))
 sns.lineplot(x="Segment",y="Region",data=df,marker='o')
 plt.xticks(rotation = 90)
@@ -44,7 +44,7 @@ sns.lineplot(x="Category",y="Sales",data=df,marker='o')
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/dddc0ce1-5d37-463d-af9d-d9a39cf33def" height=300 width=350>
 
 - <B>_SCATTERPLOT:_</B>
-```
+```python
 sns.scatterplot(x='Category',y='Sub-Category',data=df)
 sns.scatterplot(x='Category', y='Sub-Category', hue ="Segment",data=df)
 plt.figure(figsize=(10,7))
@@ -56,7 +56,7 @@ plt.xticks(rotation = 90)
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/8f9e780a-bcdd-47e0-a21e-25e8dca37cab" height=300 width=350>
 
 - <B>_BOXPLOT:_</B>
-```
+```python
 sns.boxplot(x="Sub-Category",y="Discount",data=df)
 sns.boxplot( x="Profit", y="Category",data=df)
 ```
@@ -64,13 +64,13 @@ sns.boxplot( x="Profit", y="Category",data=df)
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/27f1e245-2725-436d-a68b-df3b3c5c1660" height=300 width=350>
 
 - <B>_VIOLIN PLOT:_</B>
-```
+```python
 sns.violinplot(x="Profit",data=df)
 ```
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/19b590d7-641d-47ed-af0f-40e52df39587" height=300 width=350>
 
 - <B>_BARPLOT_</B>
-```
+```python
 sns.barplot(x="Sub-Category",y="Sales",data=df)
 plt.xticks(rotation = 90)
 sns.barplot(x="Category",y="Sales",data=df)
@@ -80,13 +80,13 @@ plt.xticks(rotation = 90)
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/32fcf2ae-85be-4bfa-bacb-0839304efe5b" height=300 width=350>
 
 - <B>_POINTPLOT_</B>
-```
+```python
 sns.pointplot(x=df["Quantity"],y=df["Discount"])
 ```
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/cc5c01fb-bc88-4f6e-8f53-08e45f679e08" height=300 width=350>
 
 - <B>_COUNT PLOT_</B>
-```
+```python
 sns.countplot(x="Category",data=df)
 sns.countplot(x="Sub-Category",data=df)
 ```
@@ -94,15 +94,79 @@ sns.countplot(x="Sub-Category",data=df)
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/a9e07021-4889-490c-8451-69864bf6f778" height=300 width=350>
 
 - <B>_HISTOGRAM_</B>
-```
+```python
 sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 ``` 
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/6e5a4fab-1cfd-4415-9a76-6e398571742b" height=300 width=350>
 
 - <B>_KDE PLOT_</B>
-```
+```python
 sns.kdeplot(x="Profit", data = df,hue='Category')
 ```
 <img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/2129a043-381c-4b04-a0da-5b6745ba0adf" height=300 width=350>
 
+### DATA VISUALIZATION USING MATPLOTLIB :
+- <B>_PLOT_</B>
+```python
+plt.plot(df['Category'], df['Sales'])
+plt.show()
+```
+<img src="" height=300 width=350>
+
+
+- <B>_HEATMAP:_</B>
+```python
+df.corr()
+plt.subplots(figsize=(12,7))
+sns.heatmap(df.corr(),annot=True)
+```
+<img src="" height=300 width=350>
+
+- <B>_PIECHART:_</B>
+```python
+df1=df.groupby(by=["Ship Mode"]).sum()
+labels=[]
+for i in df1.index:
+    labels.append(i)
+colors=sns.color_palette("bright")
+plt.pie(df1["Sales"],labels=labels,autopct="%0.0f%%")
+plt.show()
+
+df3=df.groupby(by=["Category"]).sum()
+labels=[]
+for i in df3.index:
+    labels.append(i) 
+plt.figure(figsize=(8,8))
+colors = sns.color_palette('pastel')
+plt.pie(df3["Profit"],colors = colors,labels=labels, autopct = '%0.0f%%')
+plt.show()
+```
+<img src="" height=300 width=350>
+
+- <B>_HISTOGRAM:_</B>
+```python
+plt.hist(df["Sub-Category"],facecolor="peru",edgecolor="blue",bins=10)
+plt.show()
+```
+<img src="" height=300 width=350>
+
+- <B>_BARGRAPH:_</B> 
+```python
+plt.bar(df.index,df['Category'])
+plt.show()
+```
+<img src="" height=300 width=350>
+
+- <B>_SCATTERPLOT:_</B>
+```python
+plt.scatter(df["Region"],df["Profit"], c ="blue")
+plt.show() 
+```
+<img src="" height=300 width=350>
+
+- <B>_BOXPLOT:_</B>
+```python
+plt.boxplot(x="Sales",data=df)
+plt.show()
+```
 <img src="" height=300 width=350>
