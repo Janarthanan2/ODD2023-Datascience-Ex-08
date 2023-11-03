@@ -39,53 +39,51 @@ plt.xticks(rotation = 90)
 sns.lineplot(x='Ship Mode',y='Category', hue ="Segment",data=df)
 sns.lineplot(x="Category",y="Sales",data=df,marker='o')
 ```
-### 2.Scatterplot :
+- <B>_SCATTERPLOT:_</B>
 ```
-
 sns.scatterplot(x='Category',y='Sub-Category',data=df)
-
 sns.scatterplot(x='Category', y='Sub-Category', hue ="Segment",data=df)
-
 plt.figure(figsize=(10,7))
 sns.scatterplot(x="Region",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
 
-### 3.Boxplot :
+- <B>_BOXPLOT:_</B>
 ```
-
 sns.boxplot(x="Sub-Category",y="Discount",data=df)
-
 sns.boxplot( x="Profit", y="Category",data=df)
 ```
-### 4.Violin Plot :
-```
 
+- <B>_VIOLIN PLOT:_</B>
+```
 sns.violinplot(x="Profit",data=df)
 ```
-### 5.Barplot :
+
+- <B>_BARPLOT_</B>
 ```
 sns.barplot(x="Sub-Category",y="Sales",data=df)
 plt.xticks(rotation = 90)
-
 sns.barplot(x="Category",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
-### 6.Pointplot :
+
+- <B>_POINTPLOT_</B>
 ```
 sns.pointplot(x=df["Quantity"],y=df["Discount"])
 ```
-### 7.Count plot :
+
+- <B>_COUNT PLOT_</B>
 ```
 sns.countplot(x="Category",data=df)
-
 sns.countplot(x="Sub-Category",data=df)
 ```
-### 8.Histogram :
+
+- <B>_HISTOGRAM_</B>
 ```
 sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 ``` 
-### 9.KDE Plot :
+
+- <B>_KDE PLOT_</B>
 ```
 sns.kdeplot(x="Profit", data = df,hue='Category')
 ```
