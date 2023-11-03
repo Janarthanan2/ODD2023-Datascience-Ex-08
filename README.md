@@ -23,7 +23,7 @@ Reg No: 212222230051
 ### READING THE GIVEN FILES
 ```python
 import pandas as pd
-df=pd.read_csv("/content/Superstore (3).csv",encoding='unicode_escape')
+df=pd.read_csv("/content/Superstore.csv",encoding='unicode_escape')
 df.head()
 ```
 ### DATA VISUALIZATION USING SEABORN :
