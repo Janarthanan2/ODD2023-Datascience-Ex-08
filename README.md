@@ -20,7 +20,7 @@ Data visualization is the graphical representation of information and data. By u
 Developed By: JANARTHANAN V K
 Reg No: 212222230051
 ```
-
+### READING THE GIVEN FILES
 ```python
 import pandas as pd
 df=pd.read_csv("/content/Superstore (3).csv",encoding='unicode_escape')
