@@ -67,7 +67,7 @@ sns.boxplot( x="Profit", y="Category",data=df)
 ```
 sns.violinplot(x="Profit",data=df)
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/19b590d7-641d-47ed-af0f-40e52df39587" height=300 width=350>
 
 - <B>_BARPLOT_</B>
 ```
@@ -76,8 +76,8 @@ plt.xticks(rotation = 90)
 sns.barplot(x="Category",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/16ece634-b224-42df-82be-c4a731f908af" height=500 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/32fcf2ae-85be-4bfa-bacb-0839304efe5b" height=300 width=350>
 
 - <B>_POINTPLOT_</B>
 ```
