@@ -39,6 +39,10 @@ plt.xticks(rotation = 90)
 sns.lineplot(x='Ship Mode',y='Category', hue ="Segment",data=df)
 sns.lineplot(x="Category",y="Sales",data=df,marker='o')
 ```
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
+
 - <B>_SCATTERPLOT:_</B>
 ```
 sns.scatterplot(x='Category',y='Sub-Category',data=df)
@@ -47,17 +51,23 @@ plt.figure(figsize=(10,7))
 sns.scatterplot(x="Region",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
 
 - <B>_BOXPLOT:_</B>
 ```
 sns.boxplot(x="Sub-Category",y="Discount",data=df)
 sns.boxplot( x="Profit", y="Category",data=df)
 ```
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
 
 - <B>_VIOLIN PLOT:_</B>
 ```
 sns.violinplot(x="Profit",data=df)
 ```
+<img src="" height=300 width=350>
 
 - <B>_BARPLOT_</B>
 ```
@@ -66,24 +76,31 @@ plt.xticks(rotation = 90)
 sns.barplot(x="Category",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
 
 - <B>_POINTPLOT_</B>
 ```
 sns.pointplot(x=df["Quantity"],y=df["Discount"])
 ```
+<img src="" height=300 width=350>
 
 - <B>_COUNT PLOT_</B>
 ```
 sns.countplot(x="Category",data=df)
 sns.countplot(x="Sub-Category",data=df)
 ```
+<img src="" height=300 width=350>
+<img src="" height=300 width=350>
 
 - <B>_HISTOGRAM_</B>
 ```
 sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 ``` 
+<img src="" height=300 width=350>
 
 - <B>_KDE PLOT_</B>
 ```
 sns.kdeplot(x="Profit", data = df,hue='Category')
 ```
+<img src="" height=300 width=350>
