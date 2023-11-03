@@ -1,4 +1,4 @@
-![239014451-265db0eb-13a3-43ef-8a4e-f7a4de10d28c](https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/779a20e3-38a1-4927-8860-212ac8bce76d)# Ex-08-Data-Visualization-
+# Ex-08-Data-Visualization-
 # AIM
 To Perform Data Visualization on a complex dataset and save the data to a file.
 
