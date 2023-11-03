@@ -83,24 +83,26 @@ plt.xticks(rotation = 90)
 ```
 sns.pointplot(x=df["Quantity"],y=df["Discount"])
 ```
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/cc5c01fb-bc88-4f6e-8f53-08e45f679e08" height=300 width=350>
 
 - <B>_COUNT PLOT_</B>
 ```
 sns.countplot(x="Category",data=df)
 sns.countplot(x="Sub-Category",data=df)
 ```
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/b6e8298d-0a6c-4a58-85b6-6a0e5c53508f" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/a9e07021-4889-490c-8451-69864bf6f778" height=300 width=350>
 
 - <B>_HISTOGRAM_</B>
 ```
 sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 ``` 
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/6e5a4fab-1cfd-4415-9a76-6e398571742b" height=300 width=350>
 
 - <B>_KDE PLOT_</B>
 ```
 sns.kdeplot(x="Profit", data = df,hue='Category')
 ```
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/2129a043-381c-4b04-a0da-5b6745ba0adf" height=300 width=350>
+
 <img src="" height=300 width=350>
