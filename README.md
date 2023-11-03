@@ -60,8 +60,8 @@ plt.xticks(rotation = 90)
 sns.boxplot(x="Sub-Category",y="Discount",data=df)
 sns.boxplot( x="Profit", y="Category",data=df)
 ```
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/68af3f52-c256-452b-b987-afc6767d09ac" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/27f1e245-2725-436d-a68b-df3b3c5c1660" height=300 width=350>
 
 - <B>_VIOLIN PLOT:_</B>
 ```
