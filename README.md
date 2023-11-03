@@ -51,9 +51,9 @@ plt.figure(figsize=(10,7))
 sns.scatterplot(x="Region",y="Sales",data=df)
 plt.xticks(rotation = 90)
 ```
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
-<img src="" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/23b30b9e-cb60-4dd5-a7a7-be941b7e291d" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/e422342a-4fff-487e-9780-aa92e2db6b19" height=300 width=350>
+<img src="https://github.com/Janarthanan2/ODD2023-Datascience-Ex-08/assets/119393515/8f9e780a-bcdd-47e0-a21e-25e8dca37cab" height=300 width=350>
 
 - <B>_BOXPLOT:_</B>
 ```
